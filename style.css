@@ -1,5 +1,11 @@
-﻿body {
+﻿* {
+  font-family: "Times New Roman", Times, serif;
+  color: #ff6b9d;
+}
+
+body {
   transition: background-color 0.5s ease;
+  background-color: #fff5f8;
 }
 
 .card {
@@ -14,6 +20,19 @@
 }
 
 .active {
-  background-color: #0d6efd !important;
+  background-color: #ff6b9d !important;
   color: white !important;
+}
+
+.btnOutline {
+  outline-color: #ff6b9d;
+}
+
+.progress {
+  background-color: #ffd6e7;
+  border-radius: 20px;
+}
+
+.progress-bar {
+  background-color: #ff6fa5;
 }
