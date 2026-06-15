@@ -1,0 +1,19 @@
+﻿body {
+  transition: background-color 0.5s ease;
+}
+
+.card {
+  border: none;
+  border-radius: 20px;
+}
+
+#timer {
+  font-variant-numeric: tabular-nums;
+  font-size: 6rem;
+  color: #2c3e50;
+}
+
+.active {
+  background-color: #0d6efd !important;
+  color: white !important;
+}
