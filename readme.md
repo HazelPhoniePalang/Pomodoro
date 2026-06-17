@@ -1,8 +1,8 @@
-# FocusFlow - Pomodoro Timer
+# Pinky Flow - Pomodoro Timer
 
 ## Introduction
 
-FocusFlow is a simple Pomodoro Timer web application designed to help users stay focused and productive while working or studying.
+Pinky Flow is a simple Pomodoro Timer web application designed to help users stay focused and productive while working or studying.
 
 The application follows the Pomodoro Technique, a time management method that breaks work into focused intervals followed by short breaks. This helps users maintain concentration, avoid burnout, and improve productivity.
 
@@ -50,11 +50,10 @@ Planned features include:
 - Task persistence using Local Storage
 - Session tracking and statistics
 - Sound notifications when a timer session ends
-- Custom timer durations
-- Dark mode support
 
-## Project Status
+## Important Note
 
-🚧 Work in Progress
-
-The Pomodoro Timer is functional, but the **Current Task** section is still being developed. Future updates will allow users to create, manage, and track tasks directly within the application.
+- **No Data Persistence**: This is a front-end only app.
+- Session data is NOT saved to your device
+- Closing the browser or refreshing the page will reset your timer
+- Each session starts from scratch

@@ -120,10 +120,10 @@ function setMode(mode) {
 
 function switchMode() {
   if (currentMode === "work") {
-    alert("Great work! Time for a break 🎉");
+    alert("Great work! Time for a break");
     setMode("short");
   } else {
-    alert("Break over! Ready to work again? 💪");
+    alert("Break over! Ready to work again?");
     setMode("work");
   }
 }
@@ -173,7 +173,7 @@ function renderTable() {
 
   if (tasks.length === 0) {
     taskTableBody.innerHTML =
-      '<tr><td colspan="4" class="text-muted text-center py-4">No tasks yet. Add one to get started! 🚀</td></tr>';
+      '<tr><td colspan="4" class="text-muted text-center py-4">No tasks yet. Add one to get started!</td></tr>';
     taskStats.textContent = "0 tasks • 0 completed";
     return;
   }
