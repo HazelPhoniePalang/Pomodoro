@@ -3,14 +3,28 @@
   color: #ff6b9d;
 }
 
+html {
+  scrollbar-gutter: stable; /* Reserves space for scrollbar - no jumping */
+}
+
 body {
-  transition: background-color 0.5s ease;
-  background-color: #fff5f8;
+  background-color: #fef9fc;
+  background-image: radial-gradient(circle, #ff6fa5 1px, transparent 1px);
+  background-size: 30px 30px;
+  background-position: 0 0;
+  min-height: 100vh;
 }
 
 .card {
   border: none;
   border-radius: 20px;
+}
+
+.display-1 {
+  color: #2c3e50;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 #timer {
@@ -25,7 +39,22 @@ body {
 }
 
 .btnOutline {
-  outline-color: #ff6b9d;
+  background-color: transparent;
+  border: 2px solid #ddd;
+  color: #666;
+  transition: all 0.3s ease;
+}
+
+.btnOutline:hover {
+  border-color: #ff6fa5;
+  color: #ff6fa5;
+}
+
+.btnOutline.active {
+  background-color: #ff6fa5;
+  color: white;
+  border-color: #ff6fa5;
+  box-shadow: 0 4px 12px rgba(255, 107, 157, 0.2);
 }
 
 .progress {
@@ -33,6 +62,74 @@ body {
   border-radius: 20px;
 }
 
-.progress-bar {
+#progress-bar {
+  background: linear-gradient(90deg, #ff6fa5, #ff9fb5);
+  height: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(255, 107, 157, 0.2);
+}
+
+#start-btn {
   background-color: #ff6fa5;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 12px 40px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#start-btn:hover {
+  background-color: #ff5088;
+  box-shadow: 0 4px 12px rgba(255, 107, 157, 0.3);
+}
+
+#start-btn:active {
+  transform: scale(0.98);
+}
+
+.btn-success {
+  background-color: #ff6fa5; /* Match your pink */
+  border-color: #ff6fa5;
+}
+.btn-success:hover {
+  background-color: #ff5088; /* Darker pink */
+}
+
+/* Alternating row colors */
+.task-table tbody tr:nth-child(odd) {
+  background-color: #fafafa;
+}
+
+.task-table tbody tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+/* Completed task styling */
+.task-table tbody tr.completed {
+  background-color: #f0f8f0;
+  opacity: 0.7;
+}
+
+.task-table tbody tr.completed td {
+  color: #999;
+  text-decoration: line-through;
+}
+
+/* Hover effect */
+.task-table tbody tr:hover {
+  background-color: #fff5f8;
+  transition: 0.2s ease;
+}
+
+.card {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  border: none;
+  border-radius: 12px;
+}
+
+.card:hover {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
 }
